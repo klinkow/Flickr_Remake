@@ -1,0 +1,8 @@
+<h2>gingerbeer</h2>
+<h2><%= @images %></h2>
+<% @images.each do |image| %>
+<%= image_tag(image.photo_file(:medium)) %>
+<%= image %>
+<% end %>
+
+<%= link_to "New Photo", new_user_image_path(@current_user.id) %>

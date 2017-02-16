@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
-  root to: "home#index"
+  root to: "images#index"
 
   resources :users do
-    resources :tags
+    resources :images
   end
 
   resources :images do
